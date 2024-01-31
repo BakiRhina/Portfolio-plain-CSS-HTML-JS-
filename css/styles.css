@@ -3,29 +3,61 @@ body {
     background-color: #1E2328;
 }
 
-
-h1 {
-    text-align: center;
-    font-style: bold;
-}
-
 header {
     height: 100%;
     background-color: #2A2E34;
+    justify-content: space-between;
+    align-items: center; /*Vertically center child items*/
+    display: flex;
     padding-top: 0;
+    padding-left: 2vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
-p {
-    font-family: Pixelmap;
-    font-size: 2vh;
-    color: #FFC300;
+header h1 {
     margin: 0;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    padding-left: 4vh;
+    padding: 0;
+    font-family: Pixelmap;
+    color: #FFC300;
+    font-size: 3vh;
 }
+
+header ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    margin-right: 8vh;
+    padding: 0;
+    align-items: center;
+    font-family: dogica;
+}
+
+header li {
+    margin-right: 8vh;
+}
+
+button {
+    border: none;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    background-color: #FFC300;
+    text-align: center;
+    text-decoration: none;
+    font-family: dogica;
+    cursor: pointer;
+}
+
+
 
 @font-face {
     font-family:"Pixelmap";
     src: url("/fonts/04B_30__.ttf") format("truetype");
-  }
+}
+
+@font-face {
+    font-family:"dogica";
+    src: url("/fonts/dogica.ttf") format("truetype");
+}
