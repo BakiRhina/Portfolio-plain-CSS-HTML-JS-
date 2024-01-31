@@ -1,4 +1,31 @@
+body {
+    margin: 0;
+    background-color: #1E2328;
+}
+
+
 h1 {
     text-align: center;
     font-style: bold;
 }
+
+header {
+    height: 100%;
+    background-color: #2A2E34;
+    padding-top: 0;
+}
+
+p {
+    font-family: Pixelmap;
+    font-size: 2vh;
+    color: #FFC300;
+    margin: 0;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 4vh;
+}
+
+@font-face {
+    font-family:"Pixelmap";
+    src: url("/fonts/04B_30__.ttf") format("truetype");
+  }
