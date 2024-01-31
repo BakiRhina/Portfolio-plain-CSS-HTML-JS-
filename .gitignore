@@ -1,0 +1,27 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore built files
+*.log
+*.min.css
+*.min.js
+
+# Ignore compiled files
+*.css.map
+*.js.map
+
+# Ignore hidden system files
+.DS_Store
+Thumbs.db
+
+# Ignore temporary files
+*.tmp
+
+# Ignore IDE-specific files and directories
+.idea/
+.vscode/
+
+# Ignore build or deployment directories
+build/
+dist/
+out/
