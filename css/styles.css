@@ -3,6 +3,11 @@ body {
     background-color: #1E2328;
 }
 
+
+
+/***** HEADER *****/
+
+
 header {
     height: 100%;
     background-color: #2A2E34;
@@ -37,7 +42,7 @@ header li {
     margin-right: 8vh;
 }
 
-button {
+header button {
     border: none;
     padding-top: 1vh;
     padding-bottom: 1vh;
@@ -50,6 +55,52 @@ button {
     cursor: pointer;
 }
 
+
+/***** MAIN *****/
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container {
+    margin: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projectButton {
+    width: 20vh;
+    height: 10vh;
+    border: none;
+    background-color: #0F6292;
+    text-align: center;
+    cursor: pointer;
+}
+
+.aboutButton {
+    width: 20vh;
+    height: 10vh;
+    border: none;
+    background-color: #0F6292;
+    text-align: center;
+    cursor: pointer;
+}
+
+.contactButton {
+    width: 20vh;
+    height: 10vh;
+    border: none;
+    background-color: #0F6292;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+/***** FONTS *****/
 
 
 @font-face {
