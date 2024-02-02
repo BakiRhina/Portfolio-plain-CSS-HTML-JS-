@@ -22,7 +22,7 @@ header {
 
 header h1 {
     margin: 0;
-    padding: 0;
+    padding-left: 3vh;
     font-family: Pixelmap;
     color: #FFC300;
     font-size: 3vh;
@@ -36,6 +36,7 @@ header ul {
     padding: 0;
     align-items: center;
     font-family: dogica;
+    font-size: 2vh;
 }
 
 header li {
@@ -52,6 +53,7 @@ header button {
     text-align: center;
     text-decoration: none;
     font-family: dogica;
+    font-size: 2vh;
     cursor: pointer;
 }
 
