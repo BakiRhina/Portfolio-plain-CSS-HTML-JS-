@@ -58,24 +58,32 @@ header button {
 }
 
 
-/***** MAIN *****/
+/******************************* MAIN **********************************/
 
 main {
     display: flex;
+    height: 100%;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-.container {
-    margin: 5vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+
+/** WRAPPER 1**/
+
+.wrapper1{
+    width: 100%;
+    height: 50%;
+    margin: 10vh;
+    margin-bottom: 2vh;
+    display: grid;
+    grid-template-columns: 30% 48% 20%; /* Using % instead of 'fr' in this case to add flexibility*/
+    grid-template-rows: 30vh;
+    gap: 1%; /*If using 'vh' or 'wh' the grid is overfloaded*/
 }
 
 .projectButton {
-    width: 20vh;
-    height: 10vh;
+    width: 100%; /* So it adapts to the grids' column width */
+    height: 30vh;
     border: none;
     background-color: #0F6292;
     text-align: center;
@@ -83,8 +91,8 @@ main {
 }
 
 .aboutButton {
-    width: 20vh;
-    height: 10vh;
+    width: 100%;
+    height: 30vh;
     border: none;
     background-color: #0F6292;
     text-align: center;
@@ -92,15 +100,53 @@ main {
 }
 
 .contactButton {
-    width: 20vh;
-    height: 10vh;
+    width: 100%;
+    height: 30vh;
     border: none;
     background-color: #0F6292;
     text-align: center;
     cursor: pointer;
 }
 
+/** WRAPPER 2**/
 
+.wrapper2{
+    width: 100%;
+    height: 50%;
+    margin: 10vh;
+    margin-top: 0vh;
+    display: grid;
+    grid-template-columns: 15% 48% 35%; /* Using % instead of 'fr' in this case to add flexibility*/
+    grid-template-rows: 30vh;
+    gap: 1%;
+}
+
+.projectButton2 {
+    width: 100%; /* So it adapts to the grids' column width */
+    height: 30vh;
+    border: none;
+    background-color: #0F6292;
+    text-align: center;
+    cursor: pointer;
+}
+
+.aboutButton2 {
+    width: 100%;
+    height: 30vh;
+    border: none;
+    background-color: #0F6292;
+    text-align: center;
+    cursor: pointer;
+}
+
+.contactButton2 {
+    width: 100%;
+    height: 30vh;
+    border: none;
+    background-color: #0F6292;
+    text-align: center;
+    cursor: pointer;
+}
 
 /***** FONTS *****/
 
