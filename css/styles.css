@@ -9,20 +9,19 @@ body {
 
 
 header {
-    height: 100%;
+    height: 6vh;
     background-color: #2A2E34;
     justify-content: space-between;
     align-items: center; /*Vertically center child items*/
     display: flex;
     padding-top: 0;
-    padding-left: 2vh;
     padding-top: 1vh;
     padding-bottom: 1vh;
 }
 
 header h1 {
     margin: 0;
-    padding-left: 3vh;
+    padding-left: 10vh;
     font-family: Pixelmap;
     color: #FFC300;
     font-size: 3vh;
@@ -32,7 +31,6 @@ header ul {
     display: flex;
     list-style: none;
     margin: 0;
-    margin-right: 8vh;
     padding: 0;
     align-items: center;
     font-family: dogica;
@@ -40,7 +38,7 @@ header ul {
 }
 
 header li {
-    margin-right: 8vh;
+    margin-right: 10vh;
 }
 
 header button {
@@ -62,8 +60,8 @@ header button {
 
 main {
     display: flex;
-    height: 100%;
     flex-wrap: wrap;
+    height: 130%;
     justify-content: center;
 }
 
@@ -77,13 +75,13 @@ main {
     margin-bottom: 2vh;
     display: grid;
     grid-template-columns: 30% 48% 20%; /* Using % instead of 'fr' in this case to add flexibility*/
-    grid-template-rows: 30vh;
+    grid-template-rows: 36vh;
     gap: 1%; /*If using 'vh' or 'wh' the grid is overfloaded*/
 }
 
 .projectButton {
     width: 100%; /* So it adapts to the grids' column width */
-    height: 30vh;
+    height: 100%;
     border: none;
     background-color: #0F6292;
     text-align: center;
@@ -92,7 +90,7 @@ main {
 
 .aboutButton {
     width: 100%;
-    height: 30vh;
+    height: 100%;
     border: none;
     background-color: #0F6292;
     text-align: center;
@@ -101,7 +99,7 @@ main {
 
 .contactButton {
     width: 100%;
-    height: 30vh;
+    height: 100%;
     border: none;
     background-color: #0F6292;
     text-align: center;
@@ -117,13 +115,13 @@ main {
     margin-top: 0vh;
     display: grid;
     grid-template-columns: 15% 48% 35%; /* Using % instead of 'fr' in this case to add flexibility*/
-    grid-template-rows: 30vh;
+    grid-template-rows: 36vh;
     gap: 1%;
 }
 
 .projectButton2 {
     width: 100%; /* So it adapts to the grids' column width */
-    height: 30vh;
+    height: 100%;
     border: none;
     background-color: #0F6292;
     text-align: center;
@@ -132,7 +130,7 @@ main {
 
 .aboutButton2 {
     width: 100%;
-    height: 30vh;
+    height: 100%;
     border: none;
     background-color: #0F6292;
     text-align: center;
@@ -141,7 +139,7 @@ main {
 
 .contactButton2 {
     width: 100%;
-    height: 30vh;
+    height: 100%;
     border: none;
     background-color: #0F6292;
     text-align: center;
