@@ -28,6 +28,15 @@ header h1 {
     cursor: pointer;
 }
 
+.logoGitHub {
+    width: 1vh; 
+    height: 1vh; 
+    background-image: url(media/githubpixel.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
 header ul {
     display: flex;
     list-style: none;
@@ -75,7 +84,7 @@ main {
     margin: 10vh;
     margin-bottom: 2vh;
     display: grid;
-    grid-template-columns: 26% 26% 27% 18%; /* Using % instead of 'fr' in this case to add flexibility*/
+    grid-template-columns: 53% 27% 18%; /* Using % instead of 'fr' in this case to add flexibility*/
     grid-template-rows: 36vh;
     gap: 1%; /*If using 'vh' or 'wh' the grid is overfloaded*/
 }
