@@ -118,6 +118,12 @@ main {
     font-size: 5vh;
 }
 
+#profileImage {
+    background-image: url(../media/mifacepixel.png); 
+    background-size: cover;
+    border-radius: 1vh;
+}
+
 
 /** WRAPPER 2**/
 
