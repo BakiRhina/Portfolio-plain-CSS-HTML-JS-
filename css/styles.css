@@ -28,15 +28,6 @@ header h1 {
     cursor: pointer;
 }
 
-.logoGitHub {
-    width: 1vh; 
-    height: 1vh; 
-    background-image: url(media/githubpixel.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
 header ul {
     display: flex;
     list-style: none;
@@ -48,11 +39,12 @@ header ul {
 }
 
 header li {
-    margin-right: 10vh;
+    margin-right: 7vh;
 }
 
 header button {
     border: none;
+    margin-right: 3vh;
     padding-top: 1vh;
     padding-bottom: 1vh;
     padding-left: 3vh;
@@ -92,7 +84,7 @@ main {
 .Button {
     width: 100%; /* So it adapts to the grids' column width */
     height: 100%;
-    border: none;
+    border-radius: 1vh;
     background-color: #0F6292;
     text-align: center;
     cursor: pointer;
