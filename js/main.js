@@ -15,38 +15,39 @@ the same.
 const projectDiv = document.getElementById('projectDiv');
 let count = 0;
 
-projectDiv.addEventListener('click', function () {
-  
-  // Get current height and create a variable to compute the new height
-  let currentHeight = parseInt(window.getComputedStyle(projectDiv).height);
-  let newHeight;
+projectDiv.addEventListener('click', function (event) {
+  if (event.target == projectDiv) {
+    // Get current height and create a variable to compute the new height
+    let currentHeight = parseInt(window.getComputedStyle(projectDiv).height);
+    let newHeight;
 
-  // Variable to store the new text alignment
-  let newJustifyContent;
-  let newPaddingTop;
+    // Variable to store the new text alignment
+    let newJustifyContent;
+    let newPaddingTop;
 
-  if (count%2 === 0) {
-    // Double the height
-    newHeight = currentHeight * 2;
+    if (count%2 === 0) {
+      // Double the height
+      newHeight = currentHeight * 2;
 
-    // from center-center to top-center
-    newJustifyContent = 'flex-start'
-    newPaddingTop = 5
+      // from center-center to top-center
+      newJustifyContent = 'flex-start'
+      newPaddingTop = 5
 
 
-  } else {
-    newHeight = currentHeight / 2;
+    } else {
+      newHeight = currentHeight / 2;
 
-    newJustifyContent = 'center'
-    newPaddingTop = 0
+      newJustifyContent = 'center'
+      newPaddingTop = 0
 
+    }
+
+    // Update the button's style
+    projectDiv.style.justifyContent = `${newJustifyContent}`
+    projectDiv.style.paddingTop = `${newPaddingTop}vh`
+    projectDiv.style.height = `${newHeight}px`;
+
+    // Controls the number of clicks
+    count++;
   }
-
-  // Update the button's style
-  projectDiv.style.justifyContent = `${newJustifyContent}`
-  projectDiv.style.paddingTop = `${newPaddingTop}vh`
-  projectDiv.style.height = `${newHeight}px`;
-
-  // Controls the number of clicks
-  count++;
 });
