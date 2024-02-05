@@ -13,7 +13,8 @@ the same.
 
 
 const projectDiv = document.getElementById('projectDiv');
-const projectList = document.getElementById('projectList')
+const projectList = document.getElementById('projectList');
+const wrapper2 = document.getElementById('wrapper2');
 let count = 0;
 
 projectDiv.addEventListener('click', function (event) {
@@ -24,13 +25,12 @@ projectDiv.addEventListener('click', function (event) {
     let newHeight;
 
     // Store the new text alignment for Project division
-    let newJustifyContent;
-    let newPaddingTop;
+    let projDivJustifyContent;
+    let projDivPaddingTop;
 
     // Store new display and visibility of projectList
-
-    let newDisplay;
-    let newVisibility;
+    let projListDisplay;
+    let projListVisibility;
 
     if (count%2 === 0) {
 
@@ -38,32 +38,32 @@ projectDiv.addEventListener('click', function (event) {
       newHeight = currentHeight * 2;
 
       // from center-center to top-center
-      newJustifyContent = 'flex-start'
-      newPaddingTop = 5
+      projDivJustifyContent = 'flex-start'
+      projDivPaddingTop = 5
 
       // Visible project list (visually and phtsically)
-      newDisplay = 'grid'
-      newVisibility = 'visible'
-
+      projListDisplay = 'grid'
+      projListVisibility = 'visible'
 
     } else {
       newHeight = currentHeight / 2;
 
-      newJustifyContent = 'center'
-      newPaddingTop = 0
+      projDivJustifyContent = 'center'
+      projDivPaddingTop = 0
 
-      newDisplay = 'none'
-      newVisibility = 'hidden'
+      projListDisplay = 'none'
+      projListVisibility = 'hidden'
 
     }
 
-    // Update the button's style
-    projectDiv.style.justifyContent = `${newJustifyContent}`
-    projectDiv.style.paddingTop = `${newPaddingTop}vh`
+    // Update the divisions' and button's style
+    projectDiv.style.justifyContent = `${projDivJustifyContent}`
+    projectDiv.style.paddingTop = `${projDivPaddingTop}vh`
     projectDiv.style.height = `${newHeight}px`;
-    projectList.style.display = `${newDisplay}`
-    projectList.style.visibility = `${newVisibility}`
+    projectList.style.display = `${projListDisplay}`
+    projectList.style.visibility = `${projListVisibility}`
 
+    // Update wrapper 2
     // Controls the number of clicks
     count++;
   }
