@@ -74,12 +74,12 @@ main {
 .wrapper1{
     width: 100%;
     height: 50%;
-    margin: 10vh;
+    margin: 8vh;
     margin-bottom: 2vh;
     display: grid;
     grid-template-columns: 53% 27% 18%; /* Using % instead of 'fr' in this case to add flexibility*/
     grid-template-rows: 36vh;
-    gap: 1%; /*If using 'vh' or 'wh' the grid is overfloaded*/
+    gap: 1%; /*If using 'vh' or 'wh' the grid is overflowed*/
 }
 
 .Button {
@@ -105,6 +105,7 @@ main {
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
     justify-content: center; /* Will change to flex-start when clicked */
     padding-top: 0vh;        /* Will change to 5vh when clicked */
     background-image: url(../media/nightpixel.jpg); 
@@ -114,6 +115,17 @@ main {
     text-shadow: 0vh 1vh 2vh black ;
     font-family: Pixelmap;
     font-size: 5vh;
+}
+
+#projectList {
+    margin-top: 7vh;
+    width: 80%;
+    height: 50vh;
+    background-color: #1E2328;
+    display: flex;
+    flex-direction: column;
+    /*visibility: hidden;*/
+
 }
 
 #contactButton {
