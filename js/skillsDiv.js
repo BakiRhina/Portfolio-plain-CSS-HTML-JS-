@@ -9,7 +9,7 @@ skillsDiv.addEventListener('click', function(event) {
       skillsDivWidth = 100
       skillsDiv.style.width = `${skillsDivWidth}%`
     } else {
-      skillsDivWidth = 60
+      skillsDivWidth = 44
       skillsDiv.style.width = `${skillsDivWidth}vw`
     }
     count2++;
