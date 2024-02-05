@@ -31,8 +31,10 @@ projectDiv.addEventListener('click', function (event) {
     // Store new display and visibility of projectList
     let projListDisplay;
     let projListVisibility;
+    let projListOpacity;
 
     if (count%2 === 0) {
+
 
       // Double the height
       newHeight = currentHeight * 2;
@@ -44,6 +46,18 @@ projectDiv.addEventListener('click', function (event) {
       // Visible project list (visually and phtsically)
       projListDisplay = 'grid'
       projListVisibility = 'visible'
+      projListOpacity = 1
+
+      // Update properties
+      projectDiv.style.height = `${newHeight}px`;
+      projectDiv.style.justifyContent = `${projDivJustifyContent}`
+      projectDiv.style.paddingTop = `${projDivPaddingTop}vh`
+
+      setTimeout(function () {
+        projectList.style.display = `${projListDisplay}`
+        projectList.style.visibility = `${projListVisibility}`
+        projectList.style.opacity = `${projListOpacity}`
+      }, 1300);
 
     } else {
       newHeight = currentHeight / 2;
@@ -53,15 +67,19 @@ projectDiv.addEventListener('click', function (event) {
 
       projListDisplay = 'none'
       projListVisibility = 'hidden'
+      projListOpacity = 0
 
+      // Update properties
+      projectDiv.style.height = `${newHeight}px`;
+      projectDiv.style.justifyContent = `${projDivJustifyContent}`
+      projectDiv.style.paddingTop = `${projDivPaddingTop}vh`
+
+      projectList.style.display = `${projListDisplay}`
+      projectList.style.visibility = `${projListVisibility}`
+      projectList.style.opacity = `${projListOpacity}`
     }
 
-    // Update the divisions' and button's style
-    projectDiv.style.justifyContent = `${projDivJustifyContent}`
-    projectDiv.style.paddingTop = `${projDivPaddingTop}vh`
-    projectDiv.style.height = `${newHeight}px`;
-    projectList.style.display = `${projListDisplay}`
-    projectList.style.visibility = `${projListVisibility}`
+
 
     // Update wrapper 2
     // Controls the number of clicks

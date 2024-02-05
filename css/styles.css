@@ -73,13 +73,12 @@ main {
 
 #wrapper1 {
     width: 100%;
-    height: 50%;
-    margin: 8vh;
-    margin-bottom: 2vh;
+    height: 100%;
+    margin: 6vh;
     display: grid;
     grid-template-columns: 53% 27% 18%; /* Using % instead of 'fr' in this case to add flexibility*/
-    grid-template-rows: 36vh;
-    gap: 1%; /*If using 'vh' or 'wh' the grid is overflowed*/
+    grid-template-rows: 36vh 36vh;
+    gap: 1em; /*If using 'vh' or 'wh' the grid is overflowed*/
 }
 
 .Button {
@@ -101,20 +100,23 @@ main {
     border-width: 1vh;
     cursor: pointer;
     width: 100%;
-    height: 100%;            /* Will double */
+    height: 36vh;            /* Will double */
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center; /*Will change to flex-start when clicked */
     padding-top: 0vh;        /* Will change to 5vh when clicked */
-    background-image: url(../media/nightpixel.jpg); 
+    background-image: url(../media/city.gif); 
     background-size: cover;
     color: #FFC300;
     border-color: #FFC300;
     text-shadow: 0vh 1vh 2vh black ;
     font-family: Pixelmap;
     font-size: 5vh;
+    transition: height 2s, 
+                justify-content 2s,
+                padding-top 2s;
 }
 
 #projectList {
@@ -127,8 +129,9 @@ main {
     gap: 2vh;
     row-gap: 4vh;
     visibility: hidden;  /* Will change to "visible" */
+    opacity: 0;
+    transition: visibility 1s, opacity 1s, display 1s;
 }
-
 
 
 .projectButtons {
@@ -157,17 +160,37 @@ main {
     border-radius: 1vh;
 }
 
-/** WRAPPER 2**/
-
-#wrapper2 {
+#skillsDiv {
+    border-radius: 1vh;
+    border-width: 1vh;
+    grid-column: 2;
+    cursor: pointer;
     width: 100%;
-    height: 50%;
-    margin: 10vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
     margin-top: 0vh;
-    display: none;
-    grid-template-columns: 40% 28% 30%; /* Using % instead of 'fr' in this case to add flexibility*/
-    grid-template-rows: 36vh;
-    gap: 1%;
+    padding-top: 0vh;    
+    background-image: url(../media/nightpixel.jpg); 
+    background-size: cover;
+    color: #FFC300;
+    border-color: #FFC300;
+    text-shadow: 0vh 1vh 2vh black ;
+    font-family: Pixelmap;
+    font-size: 5vh;
+}
+
+#textDescription {
+    font-family: dogica;
+    font-size: 2vh;
+    color: #FFC300;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
