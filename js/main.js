@@ -12,13 +12,13 @@ the same.
 */
 
 
-const projectButton = document.getElementById('projectButton');
+const projectDiv = document.getElementById('projectDiv');
 let count = 0;
 
-projectButton.addEventListener('click', function () {
+projectDiv.addEventListener('click', function () {
   
   // Get current height and create a variable to compute the new height
-  let currentHeight = parseInt(window.getComputedStyle(projectButton).height);
+  let currentHeight = parseInt(window.getComputedStyle(projectDiv).height);
   let newHeight;
 
   // Variable to store the new text alignment
@@ -43,9 +43,9 @@ projectButton.addEventListener('click', function () {
   }
 
   // Update the button's style
-  projectButton.style.justifyContent = `${newJustifyContent}`
-  projectButton.style.paddingTop = `${newPaddingTop}vh`
-  projectButton.style.height = `${newHeight}px`;
+  projectDiv.style.justifyContent = `${newJustifyContent}`
+  projectDiv.style.paddingTop = `${newPaddingTop}vh`
+  projectDiv.style.height = `${newHeight}px`;
 
   // Controls the number of clicks
   count++;
