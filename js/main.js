@@ -13,10 +13,11 @@ the same.
 
 
 const projectDiv = document.getElementById('projectDiv');
+const projectList = document.getElementById('projectList')
 let count = 0;
 
 projectDiv.addEventListener('click', function (event) {
-  if (event.target == projectDiv) {
+  if (event.target == projectDiv || event.target == projectList) {
     // Get current height and create a variable to compute the new height
     let currentHeight = parseInt(window.getComputedStyle(projectDiv).height);
     let newHeight;
