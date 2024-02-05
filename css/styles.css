@@ -181,6 +181,7 @@ main {
     text-shadow: 0vh 1vh 2vh black ;
     font-family: Pixelmap;
     font-size: 5vh;
+    transition: width 2s;
 }
 
 #textDescription {
