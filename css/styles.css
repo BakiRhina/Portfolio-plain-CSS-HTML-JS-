@@ -121,16 +121,26 @@ main {
     margin-top: 7vh;
     width: 80%;
     height: 50vh;
-    background-color: #1E2328;
-    display: grid;        /* WIll change to "none" */
+    display: none;        /* WIll change to "grid" */
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 10vh 10vh 10vh 10vh;
     gap: 2vh;
     row-gap: 4vh;
-    visibility: visible;  /* Will change to "hidden" */
-
+    visibility: hidden;  /* Will change to "visible" */
 }
 
+
+
+.projectButtons {
+    cursor: pointer;
+    border-radius: 1vh;
+    border-color: #110133;
+    font-family: dogica;
+    font-size: 2vh;
+    color: #FFC300;
+    background-image: linear-gradient(to right, #141E30 0%, #243B55  51%, #141E30  100%);
+}
+ 
 #contactButton {
     background-image: url(../media/handpixelmedia.jpg); 
     background-size: cover;
@@ -147,7 +157,6 @@ main {
     border-radius: 1vh;
 }
 
-
 /** WRAPPER 2**/
 
 .wrapper2{
@@ -155,11 +164,12 @@ main {
     height: 50%;
     margin: 10vh;
     margin-top: 0vh;
-    display: grid;
+    display: none;
     grid-template-columns: 40% 28% 30%; /* Using % instead of 'fr' in this case to add flexibility*/
     grid-template-rows: 36vh;
     gap: 1%;
 }
+
 
 /***** FONTS *****/
 
@@ -172,4 +182,14 @@ main {
 @font-face {
     font-family:"dogica";
     src: url("/fonts/dogica.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "KarmaFuture";
+    src: url("/fonts/KarmaFuture.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "ARCADE";
+    src: url("/fonts/ARCADE.TTF") format("truetype");
 }
