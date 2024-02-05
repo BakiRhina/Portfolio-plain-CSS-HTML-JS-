@@ -199,20 +199,10 @@ main {
 
 @font-face {
     font-family:"Pixelmap";
-    src: url("/fonts/pixelmap.ttf") format("truetype");
+    src: url("../fonts/pixelmap.ttf") format("truetype");
 }
 
 @font-face {
     font-family:"dogica";
-    src: url("/fonts/dogica.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "KarmaFuture";
-    src: url("/fonts/KarmaFuture.otf") format("opentype");
-}
-
-@font-face {
-    font-family: "ARCADE";
-    src: url("/fonts/ARCADE.TTF") format("truetype");
+    src: url("../fonts/dogica.ttf") format("truetype");
 }
