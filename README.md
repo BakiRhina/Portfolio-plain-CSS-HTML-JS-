@@ -9,3 +9,10 @@ Building a portfolio to showcase projects with plain **HTML**, **CSS** and **JS*
 | HTML            | https://www.w3schools.com/html/                     |
 | CSS             | https://www.w3schools.com/css/   |
 | JavaScript      | https://www.w3schools.com/js/                    |
+
+
+### Website
+
+This link contains the portfolio as it is improved.
+
+https://bakirhina.github.io/VanillaPortfolio/
