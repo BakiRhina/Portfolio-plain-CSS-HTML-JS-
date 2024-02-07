@@ -13,6 +13,6 @@ Building a portfolio to showcase projects with plain **HTML**, **CSS** and **JS*
 
 ### Website
 
-This link contains the portfolio as it is improved.
+This link contains the portfolio while it is improved.
 
 https://bakirhina.github.io/VanillaPortfolio/
